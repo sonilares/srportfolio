@@ -1,0 +1,93 @@
+.lightbox.open {
+  display: flex;
+
+  .lightbox__content {
+    animation: lightboxImage .5s ease;
+  }
+}
+
+.lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+
+  &__content {
+    position: relative;
+
+    img {
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 450px;
+      cursor: pointer;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  &__close {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: -40px;
+    right: 0;
+    font-size: 32px;
+    text-align: right;
+    color: #fff;
+    line-height: 40px;
+  }
+
+  &__controls {
+    .prev-item {
+      left: 30px;
+    }
+
+    .next-item {
+      right: 30px;
+    }
+
+    .prev-item,
+    .next-item {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 50%;
+      cursor: pointer;
+      top: 50%;
+      margin-top: -20px;
+      z-index: 110;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+
+      &:active,
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .fa {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

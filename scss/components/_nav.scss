@@ -1,0 +1,28 @@
+.nav {
+  margin: 80px 0;
+  padding: 0;
+
+  &__item {
+    display: block;
+  }
+
+  &__link {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #302e4d;
+    text-decoration: none;
+    line-height: 45px;
+    border-bottom: 1px solid #e8dfec;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+
+    &:not(.active):hover {
+      padding-left: 5px;
+    }
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+}

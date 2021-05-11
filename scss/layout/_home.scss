@@ -1,0 +1,56 @@
+.home {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+
+  &__profile {
+    text-align: center;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 8px solid #fff;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 20px 0 5px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 22px;
+    color: #504e70;
+  }
+
+  .social-media {
+    margin-top: 25px;
+
+    &__link {
+      height: 35px;
+      width: 35px;
+      display: inline-block;
+      text-align: center;
+      line-height: 35px;
+      color: #fff;
+      margin: 0 4px;
+      border-radius: 50%;
+      text-decoration: none;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+      }
+    }
+  }
+}

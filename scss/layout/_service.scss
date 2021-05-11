@@ -1,0 +1,52 @@
+.service {
+  &__item {
+    background-color: #fdf9ff;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    -webkit-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+
+    &:hover {
+      -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, .15);
+      box-shadow: 0 0 20px rgba(48, 46, 77, .15);
+
+      .icon .fa {
+        font-size: 25px;
+        color: #fff;
+      } 
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #302e4d;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: #504e70;
+    font-size: 16px;
+  }
+
+  .icon {
+    height: 60px;
+    width: 60px;
+    display: block;
+    margin: 0 auto 30px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-transition: background-color .5s ease;
+    transition: background-color .5s ease;
+
+    .fa {
+      font-size: 40px;
+      line-height: 60px;
+      -webkit-transition: font-size .5s ease;
+      transition: font-size .5s ease;
+    }
+  }
+}

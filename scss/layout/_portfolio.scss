@@ -1,0 +1,106 @@
+.portfolio {
+  &__filter {
+    margin-bottom: 40px;
+    text-align: center;
+
+    button {
+      border: none;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin: 0 10px;
+      color: #302e4d;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      padding-bottom: 2px;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      outline: none;
+    }
+  }
+
+  &__item.hide {
+    display: none;
+  }
+
+  &__item.show {
+    display: block;
+    animation: showItem .5s ease;
+  }
+
+  &__inner {
+    overflow: hidden;
+    position: relative;
+    border: 6px solid #fdf9ff;
+    border-radius: 10px;  
+    cursor: pointer;
+
+    &:hover {
+      h3,
+      .icon {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .portfolio__info {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: capitalize;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+
+    .icon {
+      height: 40px;
+      width: 40px;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 50%;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      -webkit-transform: translateX(20px);
+      transform: translateX(20px);
+      opacity: 0;
+    }
+
+    .fa {
+      line-height: 40px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.sidebar {
+  background-color: $bg-light-color;
+  height: 100%;
+  left: -270px;
+  position: fixed;
+  top: 0;
+  width: 270px;
+  z-index: 10;
+  border-right: 1px solid $border-light-color;
+  padding: 30px;
+  transition: .3s ease;
+
+  @include breakpoint(desktop) {
+    left: 0;
+  }
+
+  &--open {
+    left: 0;
+  }
+
+  .copyright-text {
+    color: #7d7d7d;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,33 @@
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 60px 30px 70px;
+}
+
+.shadow-dark {
+  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, .15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, .15);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  gap: 24px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    flex: 0 0 33.33%;
+    max-width: 30%;
+    margin-bottom: 24px;
+    margin-right: 24px;
+  }
+}

@@ -1,0 +1,44 @@
+.logo {
+  a {
+    &::before {
+      border-top: 4px solid #ec1839;
+      border-left: 4px solid #ec1839;
+    }
+
+    &::after {
+      border-right: 4px solid #ec1839;
+      border-bottom: 4px solid #ec1839;
+    }
+  }
+}
+
+.contact .contact__info-icon .fa,
+.blog__tags a,
+.lightbox__controls .prev-item,
+.lightbox__controls .next-item,
+.portfolio__info .fa,
+.portfolio__filter button.active,
+.about__title span,
+.nav__link.active,
+.nav__link:hover {
+  color: #ec1839;
+}
+
+.portfolio__filter button.active {
+  border-color: #ec1839;
+}
+
+.blog__date,
+.service__item:hover .icon,
+.timeline__circle-dot,
+.timeline__item::before,
+.progress__in,
+.btn--primary,
+.section-heading__title::before,
+.section-heading__title::after,
+.nav-toggler span::before,
+.nav-toggler span::after,
+.nav-toggler span,
+.social-media__link {
+  background-color: #ec1839;
+}

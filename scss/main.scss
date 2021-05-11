@@ -1,0 +1,36 @@
+// 1. Configuration and helpers
+@import './abstracts/_variables.scss';
+@import './abstracts/_animations.scss';
+@import './abstracts/_mixins.scss';
+
+// 2. Vendors
+
+// 3. Base stuff
+@import './base/_typography.scss';
+@import './base/_base.scss';
+@import './base/_helpers.scss';
+
+// 4. Layout-related sections
+@import './layout/_sidebar.scss';
+@import './layout/_home.scss';
+@import './layout/_about.scss';
+@import './layout/_service.scss';
+@import './layout/_portfolio.scss';
+@import './layout/_blog.scss';
+@import './layout/_contact.scss';
+
+// 5. Components
+@import './components/_logo.scss';
+@import './components/_nav-toggler.scss';
+@import './components/_nav.scss';
+@import './components/_btn.scss';
+@import './components/_progress.scss';
+@import './components/_timeline.scss';
+@import './components/_lightbox.scss';
+@import './components/_form.scss';
+@import './components/_preloader.scss';
+
+// 6. Page-specific styles
+
+// 7. Themes
+@import './themes/_pink.scss';
